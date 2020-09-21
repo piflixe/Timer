@@ -16,3 +16,10 @@ Ich freue mich über Mitarbeit an diesem Projekt! Ich bin kein professionieller 
 * Doppelklick: Lampe dauerhaft anschalten (z.B. zum einrichten / einstellen)
 * lange Drücken: Wechsel zwischen den zwei Timern
 * Knopf drehen: Zeit einstellen
+
+# Bilder
+![Zusammenbau](/doc/IMG_20200921_235534.jpg)
+
+![Steuerungselektronik](/doc/IMG_20200922_000312.jpg)
+
+![230V Elektronik](/doc/IMG_20200922_000351.jpg)
