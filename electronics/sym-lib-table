@@ -194,4 +194,5 @@
   (lib (name 4xxx_k)(type Legacy)(uri ${KIPRJMOD}/kicad_libs_k/symbols_k/4xxx_k.lib)(options "")(descr ""))
   (lib (name 74xGxx_k)(type Legacy)(uri ${KIPRJMOD}/kicad_libs_k/symbols_k/74xGxx_k.lib)(options "")(descr ""))
   (lib (name 4xxx_IEEE_k)(type Legacy)(uri ${KIPRJMOD}/kicad_libs_k/symbols_k/4xxx_IEEE_k.lib)(options "")(descr ""))
+  (lib (name teensy_library)(type Legacy)(uri ${KIPRJMOD}/teensy_library/teensy.lib)(options "")(descr https://github.com/XenGi/teensy_library))
 )

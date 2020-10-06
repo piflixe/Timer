@@ -1,4 +1,4 @@
-update=Mi 11 Sep 2019 14:41:44 CEST
+update=06.10.2020 17:15:51
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=example.net
+LastNetListRead=Timer-PCB.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -46,6 +46,8 @@ TrackWidth5=0.7
 TrackWidth6=1
 ViaDiameter1=0.8
 ViaDrill1=0.4
+ViaDiameter2=1.6
+ViaDrill2=1
 dPairWidth1=0.2
 dPairGap1=0.25
 dPairViaGap1=0.25
@@ -72,7 +74,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.051
 SolderMaskMinWidth=0.25
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -242,7 +244,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.2
+Clearance=0.4
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
