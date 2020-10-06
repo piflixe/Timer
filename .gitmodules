@@ -1,0 +1,3 @@
+[submodule "electronics/kicad_libs_k"]
+	path = electronics/kicad_libs_k
+	url = https://gitlab.com/konstruktiv_berlin/kicad_libs_k.git
