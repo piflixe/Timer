@@ -45,6 +45,9 @@
 
 /* Set the LOAD (CS) digital pin number*/
 const int PIN_CS = 14;
+
+// Pin to which the indicator LED is connected
+const int PIN_INDICATOR = 15;
 /* 
  *  other PINs:
  *  [LED Module] - [Teensy]
@@ -65,6 +68,7 @@ HCMAX7219 HCMAX7219(PIN_CS);
 
 IntervalTimer countEvent;
 
+// declare and init variables
 boolean LR = 1; // left or right display
 boolean runCountdown = false; // running or pausing
 boolean alwaysOn = false; // stat to have lamp always on (for setup)
@@ -87,6 +91,8 @@ void setup()
   countEvent.begin(countdown, 100000); 
   
   pinMode(PIN_RELAY,OUTPUT);
+  pinMode(PIN_INDICATOR,OUTPUT);
+  digitalWrite(PIN_INDICATOR,LOW); // turn indicator LED off on startup
   digitalWrite(PIN_RELAY,HIGH); // SolidState Relay uses negative logic!
 
   //Serial.begin(9600); // for debugging only
@@ -149,21 +155,24 @@ void loop()
         if(alwaysOn == true) { // turn relay off if it was on
           alwaysOn = false;
           digitalWrite(PIN_RELAY,HIGH); // turn lamp OFF
+          digitalWrite(PIN_INDICATOR,LOW); // turn indicator LED off
         }
         break;
       case ClickEncoder::DoubleClicked: // turn relay on
         alwaysOn = !alwaysOn; // toggle state
         if(alwaysOn == true){
           digitalWrite(PIN_RELAY,LOW); // turn lamp on
+          digitalWrite(PIN_INDICATOR,HIGH); // turn indicator LED on
         }
         else {
           digitalWrite(PIN_RELAY,HIGH); // turn lamp off
+          digitalWrite(PIN_INDICATOR,LOW); // turn indicator LED off
         }  
         break;
       case ClickEncoder::Closed:
-      break;
+        break;
       default: // nothing
-      break;
+        break;
     }
   } 
 
