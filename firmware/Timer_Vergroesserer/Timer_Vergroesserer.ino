@@ -18,6 +18,11 @@
  * Since the display has 8 digits, two different countdowns can be used. 
  * This can be practical when processing test-stripes while storing the total time on the other timer
  * 
+ * for the rotary encoder knob, the ClickEncoder library is used
+ * it can be downloaded / cloned from
+ * https://github.com/0xPIT/encoder
+ * also needs to be included in the arduino library folder
+ * 
  * USAGE
  * ==========
  * Turn knob: set time for countdown
@@ -175,4 +180,3 @@ void loop()
     }
   }
 }
-
