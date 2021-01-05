@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 5)
     (tracks 173)
     (zones 0)
     (modules 17)
@@ -96,7 +96,7 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
       (outputdirectory "Gerber/"))
   )
@@ -1392,6 +1392,9 @@
     )
   )
 
+  (gr_text "Timer PCB by Felix Piela" (at 82.5 72.75) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_line (start 58 136) (end 58 70) (layer Edge.Cuts) (width 0.15) (tstamp 5F7D767E))
   (gr_line (start 158 136) (end 58 136) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 158 70) (end 158 136) (layer Edge.Cuts) (width 0.15))
@@ -1571,7 +1574,7 @@
   (segment (start 70.4 87.08) (end 73.472 87.08) (width 1) (layer B.Cu) (net 39))
   (segment (start 65.405 92.075) (end 70.4 87.08) (width 1) (layer B.Cu) (net 39))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 5F7D907B) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -2051,7 +2054,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 5F7D9078) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
