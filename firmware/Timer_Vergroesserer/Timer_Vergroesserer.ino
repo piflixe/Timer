@@ -10,6 +10,9 @@
  *  it was developed to run on a teensy LC
  *  https://www.pjrc.com/teensy/teensyLC.html
  *  but it might run on other arduino / teensy boards as well
+ *  in order to compile and flash teensy boards with the arduino IDE,
+ *  the teensyduino programm needs to be installed
+ *  https://www.pjrc.com/teensy/td_download.html
  *  
  *  As Display, a 7 segment 8 digit display is used
  *  Include the HCMAX7219 and SPI library 
@@ -64,6 +67,8 @@ void timerIsr() {
   encoder->service();
 }
 
+const boolean OUTPUT_INVERTED = true; // quickly change if the switching output has positive or negativ logic
+
 HCMAX7219 HCMAX7219(PIN_CS);
 
 IntervalTimer countEvent;
@@ -93,8 +98,7 @@ void setup()
   pinMode(PIN_RELAY,OUTPUT);
   pinMode(PIN_INDICATOR,OUTPUT);
   digitalWrite(PIN_INDICATOR,LOW); // turn indicator LED off on startup
-  digitalWrite(PIN_RELAY,HIGH); // SolidState Relay uses negative logic!
-
+  digitalWrite(PIN_RELAY,HIGH^OUTPUT_INVERTED); 
   //Serial.begin(9600); // for debugging only
 }
 
@@ -154,18 +158,18 @@ void loop()
         
         if(alwaysOn == true) { // turn relay off if it was on
           alwaysOn = false;
-          digitalWrite(PIN_RELAY,HIGH); // turn lamp OFF
+          digitalWrite(PIN_RELAY,HIGH^OUTPUT_INVERTED); // turn lamp OFF
           digitalWrite(PIN_INDICATOR,LOW); // turn indicator LED off
         }
         break;
       case ClickEncoder::DoubleClicked: // turn relay on
         alwaysOn = !alwaysOn; // toggle state
         if(alwaysOn == true){
-          digitalWrite(PIN_RELAY,LOW); // turn lamp on
+          digitalWrite(PIN_RELAY,LOW^OUTPUT_INVERTED); // turn lamp on
           digitalWrite(PIN_INDICATOR,HIGH); // turn indicator LED on
         }
         else {
-          digitalWrite(PIN_RELAY,HIGH); // turn lamp off
+          digitalWrite(PIN_RELAY,HIGH^OUTPUT_INVERTED); // turn lamp off
           digitalWrite(PIN_INDICATOR,LOW); // turn indicator LED off
         }  
         break;
