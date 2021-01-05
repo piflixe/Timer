@@ -178,16 +178,16 @@ $EndComp
 $Comp
 L power_k:GND #PWR09
 U 1 1 5F7D9FF0
-P 7575 2350
-F 0 "#PWR09" H 7575 2100 50  0001 C CNN
-F 1 "GND" V 7580 2222 50  0000 R CNN
-F 2 "" H 7575 2350 50  0001 C CNN
-F 3 "" H 7575 2350 50  0001 C CNN
-	1    7575 2350
+P 7550 2400
+F 0 "#PWR09" H 7550 2150 50  0001 C CNN
+F 1 "GND" V 7555 2272 50  0000 R CNN
+F 2 "" H 7550 2400 50  0001 C CNN
+F 3 "" H 7550 2400 50  0001 C CNN
+	1    7550 2400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7575 2350 7650 2350
+	7550 2400 7650 2400
 $Comp
 L power_k:+5V #PWR010
 U 1 1 5F7DD3D2
@@ -201,26 +201,12 @@ F 3 "" H 7650 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7650 2200 7650 2275
-Text GLabel 7125 2400 0    50   Input ~ 0
+Text GLabel 7125 2525 0    50   Input ~ 0
 DIN
-Wire Wire Line
-	7125 2400 7250 2400
-Wire Wire Line
-	7250 2400 7250 2425
-Wire Wire Line
-	7250 2425 7650 2425
-Text GLabel 7125 2500 0    50   Input ~ 0
+Text GLabel 7125 2650 0    50   Input ~ 0
 CS
-Text GLabel 7125 2600 0    50   Input ~ 0
+Text GLabel 7125 2775 0    50   Input ~ 0
 CLK
-Wire Wire Line
-	7125 2500 7650 2500
-Wire Wire Line
-	7125 2600 7250 2600
-Wire Wire Line
-	7250 2600 7250 2575
-Wire Wire Line
-	7250 2575 7650 2575
 Text GLabel 2250 9350 0    50   Input ~ 0
 CLK
 Text GLabel 4775 9350 2    50   Input ~ 0
@@ -480,11 +466,9 @@ NoConn ~ 4700 9050
 NoConn ~ 4700 9150
 NoConn ~ 4700 9250
 NoConn ~ 2350 8850
-NoConn ~ 9725 2275
-NoConn ~ 9725 2350
-NoConn ~ 9725 2425
-NoConn ~ 9725 2500
-NoConn ~ 9725 2575
+NoConn ~ 9925 2400
+NoConn ~ 9925 2525
+NoConn ~ 9925 2650
 Wire Notes Line
 	1375 6875 6700 6875
 Wire Notes Line
@@ -522,4 +506,12 @@ F 3 "" H 1550 9550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 9550 1550 9475
+Wire Wire Line
+	7125 2775 7650 2775
+Wire Wire Line
+	7650 2525 7125 2525
+Wire Wire Line
+	7650 2650 7125 2650
+NoConn ~ 9925 2275
+NoConn ~ 9925 2775
 $EndSCHEMATC
