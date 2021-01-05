@@ -15,7 +15,19 @@ Please feel free to contribute on this project. I guess there will be many thing
 * double click: turn lamp on
 * long-press: switch between two timers
 
+
+For a short demo, see [this video](https://drive.google.com/file/d/1NLvzjJv6i2ClzPW4vnvEkMBRsPrYZNdx/view?usp=sharing).
+ 
+
 # Pictures
+
+
+## new version (with PCB)
+![control electronics](/doc/IMG_20210105_125214.jpg)
+![230V electonics](/doc/IMG_20210105_125227.jpg)
+
+
+## old version (still hand soldered)
 ![Assembly](/doc/IMG_20200921_235534.jpg)
 
 ![control electronics](/doc/IMG_20200922_000312.jpg)

@@ -17,7 +17,16 @@ Ich freue mich über Mitarbeit an diesem Projekt! Ich bin kein professionieller 
 * lange Drücken: Wechsel zwischen den zwei Timern
 * Knopf drehen: Zeit einstellen
 
+Eine kleine Demo ist in [diesem Video](https://drive.google.com/file/d/1NLvzjJv6i2ClzPW4vnvEkMBRsPrYZNdx/view?usp=sharing) zu sehen.
+
 # Bilder
+## neue Version (mit PCB)
+## new version (with PCB)
+![control electronics](/doc/IMG_20210105_125214.jpg)
+![230V electonics](/doc/IMG_20210105_125227.jpg)
+
+## alte Version (handgelötet)
+
 ![Zusammenbau](/doc/IMG_20200921_235534.jpg)
 
 ![Steuerungselektronik](/doc/IMG_20200922_000312.jpg)
